@@ -1,0 +1,28 @@
+Assignment name: Assignment 5a 
+TCSS 305: Programming Practicum, Autumn 2015
+
+Name: David Foster
+UWNetID: davidf94
+Subversion Revision Number: 30
+
+Assignment Overview:
+This assignment was meant as a precursor to PowerPaint part B. It involved the initial set up of the GUI we will use for the finished product, as well as introducing
+us to new GUI concepts such as radiobuttons, sliders, toolbars etc. Handling events including mouse events and key events are also practiced here, as they are key to any
+interactive program, especially those that require user input which includes the vast majority. 2D graphics are also covered here and we get important practice working
+with different classes used for drawing shapes and lines on JComponents.
+
+Technical Impression:
+Here I implemented the GUI with all the proper mnemonics attached to the proper components. I also was able to implement the drawing of multiple lines using an ArrayList
+that stored lines drawn and I plan on using the same concept to store other shapes. Having the line show up while drawing proved a challenge but after some tinkering with
+the different mouse listeners and changing how paintComponent handled the line helped fix the issue. I had some trouble wrapping my head around how the project itself 
+would be split up into individual classes and packages. I can tell that I will need to improve on my code organization and the usage of inheritance to clean up code and 
+allow for easy modification. I still have the tendency to hard code in a brute force manner to get the result I need without consideration for the larger picture. Putting
+the labels on the JSlider confused me for a little bit because the method I thought put labels onto the slider used a Dictionary as its parameter, but apparently that is 
+an obsolete class so I tried using a HashMap for a similar use but then found the implementation to be as easy as setting the method setPaintLabels in slider to true. 
+ 
+Unresolved problems in my submission:
+none
+
+Questions:
+What is a good way to lay out a project beforehand in order to organize it before I have all the code written already?
+

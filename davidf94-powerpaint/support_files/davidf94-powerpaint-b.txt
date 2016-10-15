@@ -1,0 +1,36 @@
+Assignment name: Assignment 5b 
+TCSS 305: Programming Practicum, Autumn 2015
+
+Name: David Foster
+UWNetID: davidf94
+Subversion Revision Number: 37
+
+Assignment Overview:
+This assignment was meant to continue our education in the area of graphical user interfaces. Using new concepts like 2D Graphics, events and event listeners from
+PropertyChangeListener to MouseEventListeners. These are crucial in event based programming and dramatically increase the versatility and capability of programs. This
+was also a difficult assignment to implement within the constraints without the use of good class hierarchy. Good programming involves the proper usage of such
+organizations and also leads to more capable and less buggy code. Writing code in this manner also allows for easy modification of a program without requiring the need
+for a complete rewrite. Implementing these concepts into our code leads to increased usability and readability.
+
+Technical Impression:
+For the first time I took time before starting to write code to organize the layout of the project on paper. This helped immensely for organizing my thoughts on the whole
+project and made subsequent coding much easier as I always had a clear goal in mind for the class being worked on. I defined an object called DrawableShape that stored a
+shape object, its color, and the stroke width used to draw it on the DrawingPanel. It was more of a special container class in order to allow for easy drawing of different
+in the drawing panel. It allowed for the use of similar logic no matter the shape used. Designing the tools started with a Tool interface that defined a few methods to be
+implemented by the different tools used to draw specific shapes. It also allows for the use of the generic Tool object in all logic regarding the individual shape drawing
+tools. Implementing the Ellipse and Rectangle tool took a while to configure when the shape was drawn behind or above the starting point due to the generic nature of the 
+coordinates given via the MouseListeners. The PencilTool also took a considerable amount of time to implement due to paths behaving fairly different from the other shapes.
+Maintaining a single path while the mouseDragged method constantly calling the createShape method was the most difficult. After many hours, I decided to use an ArrayList
+to store points collected while the mouse was held down and then build a new Path using the the stored Points. Because the initial X and Y stayed the same until a new Path
+was drawn, I used that as a test for determining when the tool was supposed to create an entirely new path or just continue adding points to the current one. After building
+these tools with the appropriate logic, implementing the little features of PowerPaint took relatively little time. I did run into an access issue regarding the UndoAll
+menu item. I had a hard time telling the component to enable when new shapes were drawn. I ended up making the UndoAll menu item a field of the GUI and writing a getter for
+it so the DrawingPanel could set its state when a new shape was drawn. While this does work, it is not very good coding practice and they are certainly more elegant
+solutions using listeners.  
+
+Unresolved problems in my submission:
+Neither the mnemonics or accelerators work for the tool bar or any jmenu items when the menus are not open.
+
+Questions:
+I still do not understand the issue with the mnemonics and accelerators.
+
