@@ -1,0 +1,35 @@
+Assignment name: EasyStreet 
+TCSS 305: Programming Practicum, Autumn 2015
+
+Name: David Foster
+UWNetID: davidf94
+Subversion Revision Number: 22
+
+Assignment Overview:
+This assignment was intended to test our knowledge of inheritance, polymorphism, interfaces and abstract classes. It was also an opportunity for us to
+improve our expertise when dealing with these concepts. Being able to use abstract classes and interfaces effectively gives us the ability to load a lot
+of power into our classes without having to be repetitive. Dealing with these sort of scenarios where we have to follow some kind of pre determined
+format will be common when we go to companies with existing software.
+
+Technical Impression:
+Due to the nature of abstract classes and interfaces. writing child classes of abstract vehicle was easy to implement. The  child classes of abstract vehicle
+had most of their methods written in abstractVehicle, and so the only methods I had write once those were done were the methods that determined the individual
+vehicles. Programming some of these was particularly difficult, as the logic became very specific for classes such as Bicycle, which still ended up having a
+CC value of 11. Once the easy methods were out of the way, pondering over the logic required for the others took a longer amount of time than I expected.
+I had an issue with Truck initially which took the longest time to understand. My initial understanding of Trucks behavior would be that it prioritized forward
+first, then randomly chose to go left or right, then if nothing else was passable, the turn around. Messing up the first choice of the Truck made it incredibly 
+difficult to wrap my head around. Eventually I worked out that solution, only to read it again and find the actual requirements were much easier to meet. I did
+very much enjoy the logic programming though. Writing behavior for certain objects to follow was very cool to see implemented and I think it increased my interest
+in robotics and AI. Those will be schools of programming I'll most certainly investigate in higher education. The test case for truck I struggled with. After 
+looking at Human test case and transferring some of the code over, it still took a while to understand what the code was doing and how it was testing the directions. 
+My Truck test may not have been thorough enough but the test got full coverage and passed and I know the behavior is correct. The assertTrue aspect of the test was 
+interesting and I don't know exactly how useful of a test it is for random choices. It still tolls me I had not covered all the branches, although from the outside 
+it seemed as if it would have.
+
+Unresolved problems in my submission:
+My code complexity for the Human chooseDirection method is still showing a code complexity of 11. It's still easy to read however and cycles through appropriately.
+My Truck test for chooseDirection may not fully test all values or as thoroughly as it maybe should.
+I did very little error checking in my code although in a less pre written program I would certainly check for more illegal arguments and null values.
+
+Questions:
+How do the assert methods work for multiple truth conditions and is there a better way to check for random output in test cases?
