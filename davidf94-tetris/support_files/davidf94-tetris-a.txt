@@ -1,0 +1,46 @@
+Tetris part A 
+TCSS 305: Programming Practicum, Autumn 2015
+
+Name: David Foster
+UWNetID: davidf94
+Subversion Revision Number:41
+
+Assignment Overview:
+The purpose of this assignment was to continue and test our understanding of new concepts including GUI, events, 
+animation and good project organization including a proper class hierarchy. This project came equipped with most
+of the back end finished for us already, but working with it gave us practice with that kind of organization.
+This was also our first assignment using timers therefore we were not dependent on user input for the program to
+do something.
+
+Technical Impression:
+First I laid out my plan for the GUI and where I wanted everything so I had an easier time writing code to make
+it happen. The main JFrame is similar to past GUIs we have done. I started to break the GUI into smaller parts
+and handle them separately if there is enough complexity to warrant the attention. I then wrote a GamePanel class
+to draw the game itself. The GamePanel is essentially a visual representation of the board class and so it has
+the ability to draw the frozen blocks and also the current piece moving down. The coordinate systems did not match
+up very well so there was a bit of math manipulation to make the pieces appear in the correct position. I tried
+to keep most of that out of the paintComponent method and move it to a private helper method. I wrote a similar
+class that only drew the next piece in line. I had a hard time wrapping my head around the coordinate system at
+first and I am finding it difficult to give the display an aesthetically pleasing look. It is functional but the
+game itself looks sub-par. I think JavaFX would be a useful tool to teach as it updates the look and functionality
+of a lot of Java GUI which I think will lead to cleaner, more professional looking programs. This assignment really
+did not require that much code, but what takes time is countless adjustments to make the GUI look the way that you
+want it too without so much trial and error. Even if WindowBuilder would be easier to make fine adjustments too,
+I appreciate the opportunity to work with the GUI code by hand and get experience with writing it out myself and
+reducing dependence on tools.
+
+Changes to the starter code:
+none
+
+
+Extra Credit:
+none
+
+
+Unresolved problems in my submission:
+none
+
+
+Questions:
+none
+
