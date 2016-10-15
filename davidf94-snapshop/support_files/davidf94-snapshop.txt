@@ -1,0 +1,31 @@
+Assignment name: Assignment 4 
+TCSS 305: Programming Practicum, Autumn 2015
+
+Name: David Foster
+UWNetID: davidf94
+Subversion Revision Number: 26
+
+Assignment Overview:
+This assignments primary purpose was to test our understanding and skill using Java Swing GUI. GUI is an extremely important part of any program and it is the face
+that every use sees when they first open it up for use. We were given a fully implemented back end and only had to write GUI code utilizing the premade classes. Doing
+so in an efficient and future conscience way was important for this assignment as writing GUI code can be very repetitive. Writing it in such a way so that future 
+modifications can be quickly and easily added is important for professional level coding.
+
+Technical Impression:
+I have a fair amount of experience using Java Swing and even some JavaFX so GUI is not unfamiliar territory for me. However, writing all the code by hand instead of 
+using drag and drop GUI was a big change. Writing GUI can be extremely repetitive, especially at first when the final shape of the code is not clear yet. Coding at 
+first was very messy and cluttered but having a rough draft can be just as important with coding as it is in writing. As I implemented all the pieces of the assignment 
+together, my Swing experience came back to me and it got much easier. This was also the fist assignment where I liberally used helper classes, a tool that is extremely
+useful for keeping code organized and concise as well as improving readability. Initially I did not understand how I was supposed to create buttons in the manner 
+described. I wrote them as I would write other code I was stumbling through, very spelled out. Efficient programming often calls for more finesse. I went in for help 
+and was pointed towards code that we were shown in class and it was extremely helpful in finding a way to effectively create buttons as well as name them and add 
+ActionListeners all in one fell swoop in a small neat loop as well. Overall this assignment was an excellent refresher on Java Swing and a great learning experience 
+on how to write GUI code in a better more professional way.
+ 
+Unresolved problems in my submission:
+I was not able to keep the image centered vertically as the window was resized.
+I do not think the JFileChooser has enough code regarding file filters and opening to the correct initial directory, although it does save your last directory.
+My ActionListener for my Open Button is longer than 20 lines but I don't have time to bring it down to size.
+Questions:
+none
+
